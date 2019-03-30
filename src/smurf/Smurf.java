@@ -13,6 +13,21 @@ package smurf;
  */
 
 public class Smurf {
+	public static void main(String[] args) {
+		Smurf handy = new Smurf("Handy");
+		handy.eat();
+		System.out.println(handy);
+		
+		Smurf papa = new Smurf("Papa ");
+		System.out.println(papa.getName());
+		System.out.println(papa.getHatColor());
+		System.out.println(papa.isGirlOrBoy());
+		
+		Smurf girl = new Smurf("Smurfette");
+		System.out.println(girl.getName());
+		System.out.println(girl.getHatColor());
+		System.out.println(girl.isGirlOrBoy());
+	}
 
 	private String name;
 
@@ -31,15 +46,13 @@ public class Smurf {
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {
 		// 3. Fill in this method
-		return "";
+		return "Every Smurf's hat is white accept for Papa Smurf";
 	}
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
-		return "";
+		return "Smerfette is the only girl Smurf";
 	}
 
 }
-
-
