@@ -4,11 +4,9 @@ package minion;
  *    Level 1
  */
 
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
 
 /*
 
@@ -32,6 +30,11 @@ This is because there is no Minion class in the package.
   To check, run this MinionTest class and the JUnit tab should show a GREEN bar.
     
  */
+
+
+	
+
+
 
 public class MinionTest {
 
@@ -60,6 +63,3 @@ public class MinionTest {
 	}
 
 }
-
-
-

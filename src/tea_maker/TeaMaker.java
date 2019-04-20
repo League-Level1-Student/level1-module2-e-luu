@@ -1,11 +1,24 @@
 package tea_maker;
+
+import tea_maker.Kettle.Water;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
 public class TeaMaker {
-
+public static void main(String[] args) {
+	TeaBag tea = new TeaBag("Chamomile");
+	tea.getFlavor();
+	Kettle kett = new Kettle();
+	kett.getWater();
+	kett.boil();
+	
+	Cup kit = new Cup();
+	
+	kit.makeTea(tea, kett.getWater());
+}
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
 
 }
@@ -22,6 +35,7 @@ class TeaBag {
 	TeaBag(String flavor) {
 		this.flavor = flavor;
 	}
+
 
 	String getFlavor() {
 		return flavor;
